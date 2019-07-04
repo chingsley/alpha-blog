@@ -9,10 +9,25 @@ class ArticlesController < ApplicationController
     # puts '*' * 59
     # puts params
     # puts '*' * 59
-    # render plain: params[:article].inspect
     @article = Article.new(article_params)
-    @article.save
-    redirect_to articles_show(@article)
+    if @article.save
+      p '>' * 59
+      flash[:notice] = "Article was successfully created"
+      puts flash
+      redirect_to article_path(@article)
+      # render plain: params[:article].inspect
+    else
+      # flash[:error] = "something went wrong"
+      # @article.errors.full_messages.each do |error|
+      #   flash[:error] = error
+      # end
+      render 'new'
+    end
+  end
+
+  def show
+    @article = Article.find(params[:id])
+    # render plain: @article.inspect
   end
 
   
