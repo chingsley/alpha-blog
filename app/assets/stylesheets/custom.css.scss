@@ -27,10 +27,10 @@ $navbar-default-bg:  #012537;
 }
 
 .jumbotron {
+  height: 70vh;
   background-image: asset-url('emma-francis-135713-unsplash.jpg');
   background-size: cover;
   // background-position: center;
-  height: 550px;
 
   h1 {
     color: #fff;
@@ -48,10 +48,41 @@ $navbar-default-bg:  #012537;
 
 .navbar {
     position: relative;
-    min-height: 50px;
+    min-height: 7vh;
+    // line-height: 7vh;
     margin-bottom: 0;
     border: 1px solid transparent;
 }
+
+.footer-container {
+  padding: 1rem 2rem;
+}
+.footer {
+  margin-top: 20vh;
+  height: 10vh;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover {
+  color: #2e6da4;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+
+  li {
+    float: left;
+    margin-left: 15px;
+  }
+}
+
 
 @media (min-width: 768px) {
 
