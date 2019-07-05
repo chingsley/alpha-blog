@@ -54,9 +54,19 @@ $navbar-default-bg:  #012537;
     border: 1px solid transparent;
 }
 
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}
+
 .footer-container {
   padding: 1rem 2rem;
 }
+
 .footer {
   margin-top: 20vh;
   height: 10vh;
