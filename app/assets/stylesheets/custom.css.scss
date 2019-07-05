@@ -22,6 +22,18 @@ $navbar-default-bg:  #012537;
   margin: 0 1rem;
 }
 
+.negative-top-margin {
+  margin: -1px;
+}
+
+.message {
+    position: fixed;
+    top: 5em;
+    right: -9em;
+    z-index: 100;
+    width: 40%;
+}
+
 .center-items {
   text-align: center;
 }
