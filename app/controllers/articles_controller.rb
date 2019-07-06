@@ -18,8 +18,9 @@ class ArticlesController < ApplicationController
     # puts params
     # puts '*' * 59
     @article = Article.new(article_params)
+    @article.user = User.first
     if @article.save
-      p '>' * 59
+      # p '>' * 59
       flash[:success] = "Article was successfully created"
       puts flash
       redirect_to article_path(@article)
