@@ -43,6 +43,11 @@ $navbar-default-bg:  #012537;
   text-align: center;
 }
 
+.listing {
+  padding: 0;
+  list-style: none;
+}
+
 .jumbotron {
   height: 70vh;
   background-image: asset-url('emma-francis-135713-unsplash.jpg');
@@ -85,7 +90,8 @@ $navbar-default-bg:  #012537;
   margin-top: 15px;
 }
 
-.article-title {
+.article-title,
+.user-title {
   font-weight: bold;
   font-size: 1.5em;
 }
