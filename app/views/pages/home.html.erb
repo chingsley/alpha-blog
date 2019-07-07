@@ -1,4 +1,13 @@
 <div class="jumbotron center-items">
   <h1>ALPHA BLOG</h1>
-  <%= link_to "Sign up now", "#", class: "btn btn-primary btn-lg btn-xlarge" %>
+  <% if logged_in? %>
+    <%= link_to "Create new article", new_article_path, class: "btn btn-primary btn-lg btn-xlarge" %>
+  <% else %>
+     <%= link_to "Sign up now", signup_path, class: "btn btn-primary btn-lg btn-xlarge" %>
+  <% end %>
 </div>
+
+
+
+<!-- if we want to hide the link for logged in user, we can use the line below -->
+<!-- <%= link_to("Sign up now", signup_path, class: "btn btn-primary btn-lg btn-xlarge") if !logged_in? %> -->
