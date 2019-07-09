@@ -82,6 +82,17 @@ h1.align-center {
   list-style: none;
 }
 
+.badge {
+  background-color: #CEF6F5;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.input-checkbox input {
+  width: auto !important;
+}
+
 .login-info {
     display: block;
     padding: 3px 20px;
